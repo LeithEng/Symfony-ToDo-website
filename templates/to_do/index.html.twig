@@ -1,7 +1,19 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}ToDo index{% endblock %}
-
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ToDo{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <style>
+        body {
+            background-image: url('{{ asset('img/back.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+    </style>
+</head>
 {% block body %}
     <h1>ToDo</h1>
 
@@ -21,8 +33,8 @@
                 <td>{{ to_do.description }}</td>
                 <td>{{ to_do.isDone ? 'Yes' : 'No' }}</td>
                 <td>
-                    <a href="{{ path('app_to_do_show', {'id': to_do.id}) }}">show</a>
-                    <a href="{{ path('app_to_do_edit', {'id': to_do.id}) }}">edit</a>
+                    <a href="{{ path('app_to_do_show', {'id': to_do.id}) }}">Show</a>
+                    <a href="{{ path('app_to_do_edit', {'id': to_do.id}) }}">Edit</a>
                 </td>
             </tr>
         {% else %}

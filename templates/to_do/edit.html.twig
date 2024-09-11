@@ -1,7 +1,19 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}Edit ToDo{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Edit ToDo{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/new.css') }}">
+    <style>
+        body {
+            background-image: url('{{ asset('img/back.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
 
+    </style>
+</head>
 {% block body %}
     <h1>Edit ToDo</h1>
 

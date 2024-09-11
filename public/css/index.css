@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body
+{
+    text-align: center;
+}
+
+h1,th
+{
+    font-family: Montserrat,sans-serif;
+    text-decoration: underline;
+
+}
+
+h1
+{
+    color:#245C73;
+}
+
+table
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-spacing: 15px;
+}
+
+td{
+    font-family: Raleway,sans-serif;
+}
+
+a
+{
+    color:#245C73;
+    margin-right: 10px;
+    font-family: Raleway,sans-serif;
+
+}
+
+a:hover
+{
+    font-style: italic;
+}
